@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+
+<!-- Alt generelt
+............................................................. 
+-->
+
+<head>
+
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title>Webdoc - Eriksminde efterskole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="efterskole,overrask,webdoc,elever,selvudvikling,selvindsigt" />
+    <meta name="description" content="Eriksminde efterskoles webdokumnetar. " />
+    <link rel="icon" type="">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="thoreFunction()">
+
+    <!-- Alt indhold i headeren
+............................................................. -->
+    <header id="header">
+        <p id="overrask">Overrask dig selv på</p>
+        <a href="#stemningsvideo" onclick="velkommen()">Eriksminde</a>
+    </header>
+
+
+    <!-- Det unikke indhold på siden
+............................................................. -->
+    <main id="main">
+
+        <video id="stemningsvideo">
+            <source src="video/Eriksminde.mp4" type="video/mp4">
+        </video>
+
+        <h3>Mød vores elever</h3>
+        <p id="tekstbeskrivelse">Følg Tore eller Francisca i deres fortælling om hvordan de har overrasket sig selv på deres efterkoleophold.</p>
+
+        <article class="flex-container">
+
+            <section class="flex-item" onclick="thoreFunction()">
+                <h2>Tore</h2>
+                <video id="interviewThore" onmouseover="playInterviewThore()" onmouseout="pauseInterviewThore()"
+                    width="620" height="auto">
+                    <source src="video/vaelg-mig-thore-kort.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <section class="flex-item" onclick="franFunction()">
+                <h2>Francisca</h2>
+                <video id="interviewFran" onmouseenter="playInterviewFran()" onmouseout="pauseInterviewFran()"
+                    width="620" height="auto">
+                    <source src="video/vaelg-mig-francisca-kort.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <p id="navneskilt">Tores Historie</p>
+
+        </article>
+
+        <img id="stregtop" src="img/Streg_i_toppen.png" alt="streg">
+        <img id="stregtopfran" src="img/streg_i_top_fran.png" alt="streg">
+
+        <article id="sigja">
+            <h2 id="sigjatext" onclick="sigja()">SIG JA</h2>
+            <p id="tekstJa"></p>
+            <img id="cirkel" src="img/cirkel1.png" alt="cirkel">
+        </article>
+
+        <article>
+            <section id="cirkler">
+                <img id="stregbund" src="img/streg_i_bunden.png" alt="streg">
+                <p id="valgfagtekst">Valgfag</p>
+                <audio id="myaudio">
+                    <source src="audio/elektroniskmusik.mp3" type="audio/mp3">
+                </audio>
+                <img onmouseover="PlaySound('myaudio')" onmouseout="StopSound('myaudio')" id="audio" src="img/audio.png"
+                    alt="lydfil"></img>
+                <img id="prikker" src="img/prikker.png" alt="#"><img>
+            </section>
+
+            <section class="container">
+                <img src="img/figur-foroven.png" alt="grafisk element" id="sortfigurtop">
+                <div class="analog parallax" id="valgfag1"></div>
+
+                <div class="middle">
+                    <p id="tekstValgfag"></p>
+                    <img src="img/broen.png" alt="¨grafisk-element">
+                </div>
+
+                <div class="elektroniskMusik parallax" id="valgfag2"></div>
+                <img src="img/figur-forneden.png" alt="grafisk element" id="sortfigurbund">
+
+                <div class="between">
+                    <div class="title middle"></div>
+                </div>
+            </section>
+        </article>
+
+        <article id="citater">
+            <section id="overrask-overskrift">
+                <h2>Overrask dig selv på</h2>
+                <h1>Eriksminde Efterskole</h1>
+            </section>
+
+            <section>
+                <p id="citat-1">"Medbestemmelse på mit efterskoleår"</p>
+                <p id="citat-2">"Demokrati, samtale, fællesskab, medbestemmelse og ligeværd"</p>
+                <p id="citat-3">"Valgfagene gør at jeg kan prøve mange forskellige ting i løbet af mit år"</p>
+                <p id="citat-4">"Man behøver ikke at kunne - man skal bare VILLE"</p>
+                <p id="citat-5">"Vi er til tider i vores egen lille bobbel, men vi er også utrolig verdensorienteret"
+                </p>
+                <p id="citat-6">"Jeg følte mig hjemme fra allerførste besøg"</p>
+                <p id="citat-7">"Skolen er fyldt med muligheder"</p>
+                <p id="citat-8">"Drengene her har et fantastisk sammenhold"</p>
+            </section>
+
+            <div class="box">
+                <a class="button" href="#popup1">Kom og besøg os</a>
+            </div>
+
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Aftal et besøg på +4527115536</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+
+
+
+    <!-- Alt indhold i footeren
+............................................................. -->
+    <footer>
+    </footer>
+
+</body>
+
+</html>
